@@ -3,34 +3,34 @@ OSC-yun-harmony
 How to use:
 ---
 
-Download pyOSC from: https://trac.v2.nl/wiki/pyOSC
+1) Download pyOSC from: https://trac.v2.nl/wiki/pyOSC.
 
-Create /tmp folder on yun:
+2) Create /tmp folder on yun:
 ```c
 mkdir tmp
 ```
-Copy lib to yun:
+3) Copy lib to yun:
 ```c
 scp -r /User/.../Downloads/pyOSC-0.3.5b-5294 root@arduino.local:/tmp
 ```
-Install pyOSC on yun:
+4) Install pyOSC on yun:
 ```c
 python setup.py install
 ```
-Copy python script to yun:
+5) Copy python script to yun:
 ```c
 scp /Users/.../Desktop/oscsend.py root@arduino.local:/tmp
 ```
-Change exec mode on script:
+6) Change exec mode on script:
 ```c
 chmod +x oscsend.py
 ```
-Copy yunOSC folder to arduino/libraries path
+7) Copy yunOSC folder to arduino/libraries path.
 
-Open pure data patch 
+8) Open pure data patch.
 
-Open Arduino IDE
+9) Open Arduino IDE.
 
-Choose File->Examples->yunOSC->send_example
+10) Choose File->Examples->yunOSC->send_example.
 
-Upload and listen to your analog reads
+11) Upload and listen to your analog reads.

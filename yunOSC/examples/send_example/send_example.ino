@@ -7,6 +7,8 @@
 //  * oscsend.py python script located in root@arduino.local/tmp
 //  * pd-extended msg_to_freq_example.pd patch
 //  
+//  README/GUIDE: https://github.com/bobbyziom/OSC-yun-harmony/blob/master/README.md
+//
 //  - bobbyziom  
 //
 

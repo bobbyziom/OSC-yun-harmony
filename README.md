@@ -25,7 +25,11 @@ Change exec mode on script:
 chmod +x oscsend.py
 ```
 Copy yunOSC folder to arduino/libraries path
+
 Open pure data patch 
+
 Open Arduino IDE
+
 Choose File->Examples->yunOSC->send_example
+
 Upload and listen to your analog reads

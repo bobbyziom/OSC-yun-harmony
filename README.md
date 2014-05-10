@@ -33,4 +33,6 @@ chmod +x oscsend.py
 
 10) Choose File->Examples->yunOSC->send_example.
 
-11) Upload and listen to your analog reads.
+11) Update sketch with your ip
+
+12) Upload and listen to your analog reads.

@@ -1,7 +1,7 @@
 OSC-yun-harmony
 ===============
 
-A full implementation of OSC messages sent from Arduino Yun to Pure Data.
+A full implementation of OSC messages sent from Arduino Yun to Pure Data using local UDP.
 
 How to use:
 ---

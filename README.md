@@ -8,7 +8,7 @@ How to use:
 
 1) Download pyOSC from: https://trac.v2.nl/wiki/pyOSC.
 
-2) Create /tmp folder on yun:
+2) Create /OSCtoPD folder on yun:
 ```c
 mkdir OSCtoPD
 ```

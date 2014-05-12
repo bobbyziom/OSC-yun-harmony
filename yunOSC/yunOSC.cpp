@@ -27,7 +27,7 @@ void yunOSC::send(String adr, int* msg, int len) {
 
 	Process p;
     p.begin("python");
-    p.addParameter("/tmp/oscsend.py");
+    p.addParameter("/OSCtoPD/oscsend.py");
     p.addParameter(IP_ADR);
     p.addParameter(PORT);
     p.addParameter(adr);

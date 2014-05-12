@@ -10,11 +10,11 @@ How to use:
 
 2) Create /tmp folder on yun:
 ```c
-mkdir tmp
+mkdir OSCtoPD
 ```
 3) Copy lib to yun:
 ```c
-scp -r /User/.../Downloads/pyOSC-0.3.5b-5294 root@arduino.local:/tmp
+scp -r /User/.../Downloads/pyOSC-0.3.5b-5294 root@arduino.local:/OSCtoPD
 ```
 4) Install pyOSC on yun:
 ```c
@@ -22,7 +22,7 @@ python setup.py install
 ```
 5) Copy python script to yun:
 ```c
-scp /Users/.../Desktop/oscsend.py root@arduino.local:/tmp
+scp /Users/.../Desktop/oscsend.py root@arduino.local:/OSCtoPD
 ```
 6) Change exec mode on script:
 ```c

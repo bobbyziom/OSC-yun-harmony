@@ -17,15 +17,15 @@
 yunOSC::yunOSC() {}
 
 void yunOSC::begin(String adr, int port) {
-  
-     IP_ADR = adr;
-     PORT = String(port);
 
+   IP_ADR = adr;
+   PORT = String(port);
 }
 
+// Send INT values.
 void yunOSC::send(String adr, int* msg, int len) {
 
-	Process p;
+    Process p;
     p.begin("python");
     p.addParameter("/OSCtoPD/oscsend.py");
     p.addParameter(IP_ADR);
@@ -33,12 +33,29 @@ void yunOSC::send(String adr, int* msg, int len) {
     p.addParameter(adr);
 
     for(int i = 0; i < len; i++) {
-      p.addParameter(String(msg[i]));
+        p.addParameter(String(msg[i]));
     }
 
     p.run(); 
     p.flush();
+}
 
+// Send FLOAT values.
+void yunOSC::send(String adr, float* msg, int len) {
+
+    Process p;
+    p.begin("python");
+    p.addParameter("/OSCtoPD/oscsend.py");
+    p.addParameter(IP_ADR);
+    p.addParameter(PORT);
+    p.addParameter(adr);
+
+    for(int i = 0; i < len; i++) {
+        p.addParameter(String(msg[i]));
+    }
+
+    p.run(); 
+    p.flush();
 }
 
 yunOSC osc;

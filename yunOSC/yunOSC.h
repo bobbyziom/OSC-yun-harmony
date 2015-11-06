@@ -25,6 +25,7 @@ public:
 	yunOSC();
 	void begin(String adr, int port);
 	void send(String adr, int* mgs, int len);
+  	void send(String adr, float* mgs, int len);
 
 private:
 
